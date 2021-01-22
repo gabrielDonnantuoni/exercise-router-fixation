@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Users = () => (
+const Users = ({ greetings = 'Hi there', match: { params: { id } } }) => (
   <div>
     <h2> Users </h2>
-    <p> My awesome Users component </p>
+    <p> { greetings }, { id }. This is my awesome Users component! </p>
   </div>
 );
 
